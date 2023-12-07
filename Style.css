@@ -1,0 +1,700 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loggo {
+    width: 55px;
+    height: 30px;
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.navigationBarRegion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: #fffefe;
+    padding: 0 50px;
+}
+
+li a {
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 7px 10px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+a:hover {
+    color: rgb(8, 157, 161);
+    text-decoration: none;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+.iconsRegion {
+    display: inline-flex;
+    justify-content: right;
+    padding-right: 90px;
+    color: black;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 0px;
+    color: rgb(160, 217, 219);
+    height: 5px;
+    background-image: linear-gradient(rgb(160, 217, 219), white);
+    ;
+}
+
+.allWelcomeRegion {
+    margin-left: 50px;
+    margin-right:6px;
+    padding: 50px;
+    height: 80vh;
+    text-align: justify;
+    font-size: 13.3px;
+    position: relative;
+    text-justify: inter-word;
+}
+
+.welcomeRegion>p {
+    text-align: justify;
+    width: 530px;
+    padding-bottom: 20px;
+
+}
+
+.allWelcomeRegion::before {
+    background-image: url("image/about.png");
+    background-size: 1350px 680px;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+}
+
+.welcomeRegion {
+    color: black;
+    isolation: isolate;
+    margin-bottom: 700px;
+
+}
+
+.tableFigure {
+    margin-top: 0px;
+    float: right;
+
+}
+
+.heading{
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.book {
+    color: rgb(8, 157, 161)
+}
+
+.btn {
+    background-color: rgb(8, 157, 161);
+    color: white;
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 0%;
+    border-style: none;
+}
+
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.boxStyle {
+    justify-content: flex-start;
+    text-align: center;
+    margin: 50px 50px 0px 50px;
+    border: 2px solid rgb(160, 217, 219);
+    box-shadow: 0 0 5px 3px rgb(160, 217, 219);
+    padding: 5px 10px 0px 10px;
+}
+
+.boxStyle>.fa-solid {
+    width: 100%;
+    align-content: center;
+    font-size: 4em;
+    color: rgb(8, 157, 161);
+    padding-bottom: 10px;
+}
+
+.boxStyle>strong{
+    align-content: center;
+    font-weight: 700;
+    padding: 1px 0;
+    font-size: medium;
+}
+
+.boxStyle>p {
+    align-content: center;
+    padding-top: 0;
+}
+
+.aboutUsRegion {
+
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 30px;
+    text-align: justify;
+    font-size: 17px;
+
+}
+
+.aboutUsRegion>p {
+
+    text-align: justify;
+    padding-bottom: 30px;
+    font-size: 13.7px; 
+}
+
+.aboutfigure {
+    margin-top: 0px;
+    margin-right: 150px;
+    float: left;
+}
+
+/*---------------------------------------------------------*/
+.featuredBooks {
+    width: 100%;
+    height: 100vh;
+    padding: 67px 0;
+    margin-top: 80px;
+}
+
+.featuredBooks h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    font-size: 42px;
+}
+
+.cards {
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.featuredBooks .cards > div {
+    width: 240px;
+    height: 430px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.featuredBooks .cards > div:hover {
+    box-shadow: 0 0 5px #087D9D;
+}
+
+.cards > div > div > img {
+    width: 145px;
+}
+
+.cards > div > div > h2 {
+    margin: 10px;
+}
+
+.cards > div > div > p:nth-of-type(1){
+    color: #919191;
+}
+
+.cards > div > div > p:nth-of-type(2){
+    color: #087D9D;
+    margin-top: 10px;
+}
+.cards > div > div > p:nth-of-type(3){
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.cards > div > div > p:nth-of-type(3) sub{
+    font-weight: 80;
+    padding: 0 5px;
+}
+
+.cards > div > div > button {
+    padding: 10px 20px;
+    border: 2px solid rgb(8, 157, 161);
+    background-color: white;
+    color: #000;
+    width: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(8, 157, 161);
+    border-radius: 10px;
+}
+
+/*----------------------------------------------------------------*/
+.arrivals {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 300px;
+
+}
+
+.arrivals h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.arrivalsCards {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 25px 0;
+}
+
+.arrivalsCards>div {
+    width: 240px;
+    height: 350px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 18px;
+}
+
+.arrivalsCards>div:hover {
+    box-shadow: 0 0 5px rgb(8, 157, 161);
+}
+
+.arrivalsCards > div > div:first-of-type{
+    width: 140px;
+    height: 230px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.arrivalsCards > div > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivalsCards > div > div > img:hover {
+    transform: scale(1.1);
+}
+
+.arrivalsCards > div > div > p:nth-of-type(1){
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivalsCards > div > div > div i {
+    color: rgb(8, 157, 161);
+    margin-bottom: 18px;
+}
+
+.arrivalsCards > div > div > button {
+    padding: 10px 20px;
+    border: 2px solid rgb(8, 157, 161);
+    background-color: white;
+    color: black;
+    width: 50%;
+}
+
+/*--------------------------------------*/
+.reviews {
+    width: 100%;
+    height: auto;
+}
+
+.reviews h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 55px;
+}
+
+.reviews .reviewBox {
+    width: 95%;
+    height: 50vh;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reviews .reviewBox .reviewCard {
+    
+    width: 400px;
+    height: 320px;
+    box-shadow: 0 0 8px rgb(8, 157, 161);
+    padding: 15px;
+    margin: 0 12px;
+}
+
+.reviews .reviewBox .reviewCard i {
+    float: right;
+    font-size: 120px;
+    position: relative;
+    bottom: 15px;
+    padding-top: 60px;
+}
+
+.reviews .reviewBox .reviewCard .top img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.reviews .reviewBox .reviewCard .card p {
+    margin: 10px 0 10px 0;
+    text-align: justify;
+}
+
+.reviews .reviewBox .reviewCard .card .icon i {
+    font-size: 16px;
+    float: left;
+    margin-top: 20px;
+    padding: 0 1px;
+}
+
+.banner {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background-image: url(image/banner.jpg);
+    background-size:100%;
+    height: 53vh;
+    
+}
+.banner > button {
+   margin-top: 17%;
+   margin-left: 7%;
+}
+
+.blog {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+}
+
+.blog h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.blog .blogBox {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+}
+
+.blog .blogBox .blogCard {
+    margin: 0 auto;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.blog .blogBox .blogCard .blogImg {
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog .blogBox .blogCard .blogImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog .blogBox .blogCard .content {
+    padding: 20px;
+}
+
+.blog .blogBox .blogCard .content strong {
+    color: rgb(8, 157, 161);
+}
+
+.blog .blogBox .blogCard .content p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.blog .blogBox .blogCard .content .blogIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+}
+
+footer .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer .tag {
+    margin: 10px 0;
+}
+
+footer .footer .tag img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer .tag p {
+    width: 250px;
+    text-align: justify;
+}
+
+footer .footer .tag h1 {
+    font-size: 25px;
+    margin: 25px 0;
+}
+
+footer .footer .tag a {
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    font-size: 12px;
+    padding: 5px 0;
+    color: #000000;
+}
+
+footer .footer .tag i {
+    margin-right: 10px;
+}
+
+footer .footer .tag .link i {
+    margin: 0 5px;
+}
+
+footer .footer .tag .search {
+    width: 230px;
+    height: 30px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 25px;
+}
+
+footer .footer .tag .search input {
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: none;
+}
+
+footer .footer .tag .search button {
+    padding: 7px;
+    background: #089da1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000000;
+}
+
+footer .end span {
+    color: #089da1;
+    margin-left: 10px;
+}
+/*---------------------------------------------------*/
+/*@media (max-width: 1325px){
+    .arrivals {
+       padding-bottom: 20%;
+    }
+    .banner {
+        height: 45vh;
+        
+    }
+    .blog h1 {
+        margin-bottom: 1%px;
+    }
+    .reviews .reviewBox {
+        flex-wrap: nowrap;
+    }
+	
+}
+@media (max-width: 1185px){
+	.aboutfigure {
+        width: 50%;
+    }
+    .reviews .reviewBox {
+        flex-wrap: nowrap;
+    }
+    
+}
+
+@media (max-width: 1118px){
+	.arrivals {
+        padding-bottom: 30%;
+     }
+     .reviews .reviewBox {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 1022px){
+	
+    .arrivals {
+        padding-bottom: 70%;
+     }
+     .reviews .reviewBox .reviewCard .card p {
+        font-size: 11.5px;
+    }
+    .reviews .reviewBox .reviewCard i {
+        font-size: 73px;
+        
+    }
+    .banner {
+        height: 36vh;
+        
+    }
+    .allWelcomeRegion::before {
+        background-image: none
+    }
+    .reviews .reviewBox {
+        flex-wrap: nowrap;
+    }
+     
+}
+@media (max-width: 450px){
+    ul {
+        display: none;
+
+    }
+    .tableFigure {
+        width: 130%;
+    }
+    .welcomeRegion>p {
+        width: 200px;
+        padding-bottom: 20px;
+    
+    }
+    .aboutfigure {
+        width:130% ;
+    }
+    .arrivals {
+        padding-bottom: 660%;
+     }
+    .arrivalsCards {
+        width: 100%;
+        margin-left: 15%;
+    }
+    .reviews .reviewBox {
+        padding-bottom: 230%;
+    }
+    .banner {
+        height: 11.7vh;
+        
+    }
+    .banner > button {
+        width: 15%;
+        height: 15%;
+        font-size: 0.6rem;
+     }
+     .blog .blogBox {
+        width: 60%;
+        margin-right:0% ;
+        margin-left:0% ;
+        grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    }
+    .blog .blogBox .blogCard .blogImg img {
+        width: 70%;
+        height: 70%;
+        margin-bottom: 0%;
+    }
+    
+    .blog .blogBox .blogCard {
+        margin-left: 21%;
+        width: 127%;
+    }
+    .blog .blogBox .blogCard .blogImg {
+        height: 250px;
+        padding-bottom: 0;
+        
+    }
+    .blog .blogBox .blogCard .content {
+        margin-top: -69px;
+    }
+    
+    footer .footer .tag p {
+    display: none;
+    }
+    footer .footer .tag img {
+        display: none;
+    }
+    footer .footer .tag .search {
+       display: none;
+    }
+    footer .footer .tag h1 {
+       font-size: 100%;
+    }
+    .Newslateer{
+        display: none;
+    }
+}*/
